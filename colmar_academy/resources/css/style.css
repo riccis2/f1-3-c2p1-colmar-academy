@@ -1,0 +1,568 @@
+html{
+  font-size: 16px;
+  font-family: "lucids sans unicode", sans-serif;
+}
+
+h1{
+  font-family: "Exo 2", "lucida sans unicode", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #412305;
+}
+h2{
+  font-family: "Maven Pro", "lucida sans unicode", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #412305;
+}
+h3{
+  font-family: "Rockitt", "lucida sans unicode", sans-serif;
+  font-size: 1.25rem;
+  color: #412305;
+}
+
+h4{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
+  color: #152940;
+  font-size: 1.5rem;
+}
+
+p{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
+  color: #576471;
+}
+
+span, a{
+  font-family: "Rokkitt", "lucida sans unicode", sans-serif;
+  color: #412305;
+  font-weight: 200;
+}
+
+
+/* ---------------------------Header------------------------------- */
+
+header{
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #F3F4F1;
+  width: 100%;
+}
+
+.header-mobile{
+  display: none;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#logo-colmar{
+  font-weight: bold;
+  color: #31373E;
+}
+
+#logo-academy{
+  font-weight: 200;
+  color: #576471;
+}
+
+nav{
+  padding-right: 0.5rem;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 400;
+  color: #31373E;
+}
+
+li:hover{
+  background-color: #F3EA7E;
+  transition: background-color 0.25s ease;
+}
+
+li img{
+  padding: 0.25rem;
+}
+
+li i{
+  padding: 0.5rem;
+}
+
+/* ----------------------------Banner-------------------------------- */
+
+.banner{
+  display: flex;
+  max-width: 100%;
+  height: 35rem;
+  padding: 6rem 1.5rem 2rem 1.5rem;
+  background-color: #92A8BD;
+}
+
+.banner-photo{
+  background-image: url(../media/photos/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  margin: 2rem, 1.5rem;
+}
+.motto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.5rem;
+  max-width: 25%;
+}
+
+.motto h1{
+  margin-bottom: 1.5rem;
+}
+
+.motto h3{
+  margin-bottom: 1.5rem;
+}
+
+.button{
+  text-align: center;
+  background-color: #576471;
+  color: white;
+  padding: 0.5rem 0rem;
+}
+
+.button p{
+  color: #F3F4F1;
+  width: 100%;
+  height: auto;
+}
+
+.button p:active{
+  color: #412305;
+}
+
+.button:hover{
+  background-color: #412305;
+  transition: background-color 0.25s ease;
+}
+
+.button:active{
+  background-color: #F3EA7E;
+  transition: background-color 0.25s ease;
+}
+
+/* ----------------------------Content------------------------------ */
+
+.content{
+  display: flex;
+  max-width: 100%;
+  height: 43.75rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: #F3F4F1;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  width: 59.4%;
+}
+
+.content-photo{
+  background-image: url(../media/photos/information-main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 31rem;
+  margin-top: 2rem;
+}
+
+.section h2{
+  padding-top: 2rem;
+}
+
+.section p{
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  margin-right: -2.6rem;
+}
+
+.section span{
+  font-size: 0.9rem;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 2.5rem;
+  width: 423px;
+  border-left: 1px solid #412305;
+  border-right: 0.5px solid #412305;
+}
+
+.photo-link{
+  display: flex;
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid #412305;
+}
+
+.content .photo-link{
+  padding-top: 1rem;
+}
+
+.photo-link:hover{
+  background: #F3EA7E;
+  transition: background-color 0.25s ease;
+}
+
+.photo-link a:hover{
+  color: #412305;
+}
+
+.small-photo{
+  width: 35%;
+  height: 9rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+#photo1{
+  background-image: url(../media/photos/information-orientation.jpg);
+}
+
+#photo2{
+  background-image: url(../media/photos/information-campus.jpg);
+}
+
+#photo3{
+  background-image: url(../media/photos/information-guest-lecture.jpg);
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem 0 2.5rem 0;
+  width: 65%;
+}
+
+.info p{
+  font-weight: 200;
+}
+
+.info a{
+  color: #7F9EBD;
+  text-decoration: none;
+}
+
+/*-----------------------------Courses------------------------------*/
+
+.courses{
+  height: auto;
+  width: 100%;
+  background-color: #F3EA7E;
+  padding-bottom: 2rem;
+}
+
+.courses h2{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.grid{
+  display: flex;
+  width: 100rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.grid-mobile{
+  display: none;
+}
+
+.course{
+  height: 20rem;
+  width: 22rem;
+  margin: 2rem;
+  background-color: #F3F4F1;
+}
+
+.course:hover{
+  height: 24rem;
+  width: 26rem;
+  transition: height 0.25s ease, width 0.25s ease;
+}
+
+.medium-photo{
+  height: 55%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.course h3{
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.course h4{
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.course p{
+  padding: 0rem 0rem 1.5rem 1rem;
+}
+
+#course1{
+  background-image: url(../media/photos/course-software.jpg);
+}
+
+#course2{
+  background-image: url(../media/photos/course-computer-art.jpg);
+}
+
+#course3{
+  background-image: url(../media/photos/course-design.jpg);
+}
+
+#course4{
+  background-image: url(../media/photos/course-data.jpg);
+}
+
+#course5{
+  background-image: url(../media/photos/course-business.jpg);
+}
+
+#course6{
+  background-image: url(../media/photos/course-marketing.jpg);
+}
+
+/*-----------------------------Thesis--------------------------------------*/
+
+.thesis{
+  width: 100%;
+  height: auto;
+  background-color: #F3F4F1;
+}
+
+.thesis h2{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  padding: 0 0 2rem 1.5rem;
+}
+
+section{
+  width: 60%;
+  height: auto;
+}
+
+section video{
+  width: 100%;
+  height: 30rem;
+  margin-right: 1rem;
+}
+
+section h3{
+  margin-top: 1.5rem;
+}
+
+section p{
+  margin-top: 1.5rem;
+}
+
+.thesis aside{
+  border: none;
+}
+
+.thesis .photo-link{
+  border: none;
+}
+
+#photo4{
+  background-image: url(../media/photos/thesis-fisma.jpg);
+}
+
+#photo5{
+  background-image: url(../media/photos/thesis-now-and-then.jpg);
+}
+
+/*--------------------------------Footer------------------------------------*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 0 1.5rem;
+  border-top: 1px solid #412305;
+  height: 5rem;
+  background-color: #F3F4F1;
+}
+
+.copywrite{
+  color: #412305;
+}
+
+.links a{
+  text-decoration: none;
+  color: #412305;
+  padding: 0 0.75rem;
+  font-weight: 200;
+}
+
+/*-----------------------------Mobile Code-----------------------------------*/
+
+@media only screen and (orientation: portrait), (max-width: 600px){
+  header{
+    display: none;
+  }
+
+  .header-mobile{
+    display: block;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: #F3F4F1;
+  }
+
+  .header-mobile nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .header-mobile ul{
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner{
+    display: block;
+    height: auto;
+  }
+
+  .banner-photo{
+    width: 100%;
+    height: 11.25rem;
+    margin: 0;
+  }
+
+  .motto{
+    max-width: 100%;
+  }
+
+  .content{
+    height: auto;
+    padding: 0;
+  }
+
+  .section{
+    display: none;
+  }
+
+  .content aside{
+    height: auto;
+    width: 100%;
+    border: none;
+    margin: 1rem;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .content .photo-link{
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .small-photo{
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+  }
+
+  .info{
+    padding-left: 1rem;
+  }
+
+  .courses{
+    background-color: #F3F4F1;
+  }
+
+  .courses h2{
+    padding: 2rem 0 1rem 0;
+  }
+
+  .grid{
+    display: none;
+  }
+
+  .grid-mobile{
+    display: block;
+  }
+
+  .grid-mobile h2{
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #F3EA7E;
+  }
+
+  .thesis h3, .thesis p, .thesis aside{
+    display: none;
+  }
+
+  .thesis video{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    padding: 0;
+  }
+
+  #photo1{
+    background-image:url(../media/photos/information-orientation-mobile.jpg);
+  }
+
+  #photo2{
+    background-image:url(../media/photos/information-campus-mobile.jpg);
+  }
+
+  #photo3{
+    background-image:url(../media/photos/information-guest-lecture-mobile.jpg);
+  }
+
+
+
+
+}
